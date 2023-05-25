@@ -4,10 +4,55 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Results summary component</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main id="app">
+      <section class="header">
+        <h1 class="title">Your Result</h1>
+
+        <div class="circle">
+          <h2 class="total-score">76</h2>
+          <span class="total-score-ratio">of 100</span>
+        </div>
+
+        <h3>Great</h3>
+
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+
+      <section class="summary">
+        <h2>Summary</h2>
+
+        <ul>
+          <li>
+            <img src="" alt="" />
+            Reaction
+            <span> 80 <span>/ 100</span> </span>
+          </li>
+
+          <li>
+            <img src="" alt="" />
+            Memory
+            <span> 92 <span>/ 100</span> </span>
+          </li>
+          <li>
+            <img src="" alt="" />
+            Verbal
+            <span> 61 <span>/ 100</span> </span>
+          </li>
+          <li>
+            <img src="" alt="" />
+            Visual
+            <span> 72 <span>/ 100</span> </span>
+          </li>
+        </ul>
+
+        <button class="button">Continue</button>
+      </section>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
