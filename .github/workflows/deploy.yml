@@ -15,7 +15,7 @@ jobs:
       - name: Cache node_modules
         uses: actions/setup-node@v3
         with:
-          node-version: "18.0"
+          node-version: 18
           cache: "npm"
 
       - name: Build JS files
@@ -26,7 +26,6 @@ jobs:
           npm run build --base="/$SLUG/"
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
           folder: dist
